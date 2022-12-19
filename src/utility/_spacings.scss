@@ -1,0 +1,46 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+// Generate Margin Classes
+@each $property, $map in $margins {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    .#{$prefix}-#{$key} {
+      // Check for vertical or horizontal margin
+      // Else generate default property
+      @if ($property == "margin-x") {
+        margin-left: $value;
+        margin-right: $value;
+      } @else if($property == "margin-y") {
+        margin-top: $value;
+        margin-bottom: $value;
+      } @else {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+// Generate Padding Classes
+@each $property, $map in $paddings {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    .#{$prefix}-#{$key} {
+      // Check for vertical or horizontal padding
+      // Else generate default property
+      @if ($property == "padding-x") {
+        padding-left: $value;
+        padding-right: $value;
+      } @else if ($property == "padding-y") {
+        padding-top: $value;
+        padding-bottom: $value;
+      } @else {
+        #{$property}: $value;
+      }
+    }
+  }
+}

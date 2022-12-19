@@ -1,0 +1,275 @@
+// Font
+$base-font-size: 1rem !default;
+
+// Spacings
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// Colors
+$primary: #123 !default;
+$secondary: #456 !default;
+$terciary: #678 !default;
+
+// Border Radius
+$base-border-radius: 4px;
+
+// Responsive Breakpoints
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+// Font Sizes
+/*#region Fonts#*/
+$font-sizes: (
+  "xs": $base-font-size * 0.5,
+  "sm": $base-font-size,
+  "md": $base-font-size * 1.5,
+  "lg": $base-font-size * 2,
+  "xl": $base-font-size * 2.5,
+  "xxl": $base-font-size * 3,
+);
+/*#endregion#*/
+
+// Palette
+/*#region Palette#*/
+$palette: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "terciary": $terciary,
+  "black": #424242,
+  "white": #f2f2f2,
+);
+/*#endregion#*/
+
+// Margins
+/*#region Margins#*/
+$margins: (
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-right": (
+    "prefix": "mr",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+  "margin-x": (
+    "prefix": "mx",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+      "auto": auto,
+    ),
+  ),
+  "margin-y": (
+    "prefix": "my",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 3,
+      "4": $base-margin * 4,
+      "5": $base-margin * 5,
+    ),
+  ),
+);
+/*#endregion#*/
+
+// Paddings
+/*#region Paddings#*/
+$paddings: (
+  "padding": (
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-top": (
+    "prefix": "pt",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-right": (
+    "prefix": "pr",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pb",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-left": (
+    "prefix": "pl",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-x": (
+    "prefix": "px",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+  "padding-y": (
+    "prefix": "py",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5,
+    ),
+  ),
+);
+/*#endregion#*/
+
+// Layout
+/*#region Layout#*/
+$layouts: (
+  "display": (
+    "prefix": "d",
+    "values": (
+      "flex",
+      "block",
+      "inline",
+      "grid",
+      "inline-flex",
+      "inline-block",
+    ),
+  ),
+  "justify-content": (
+    "prefix": "justify",
+    "values": (
+      "space-between",
+      "space-evenly",
+      "space-around",
+      "center",
+      "flex-start",
+      "flex-end",
+    ),
+  ),
+  "align-items": (
+    "prefix": "align",
+    "values": (
+      "center",
+      "flex-start",
+      "flex-end",
+      "stretch",
+      "baseline",
+    ),
+  ),
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      "center",
+      "left",
+      "right",
+      "justify",
+    ),
+  ),
+);
+/*#endregion#*/
+
+// Border Radii
+/*#region Border Radius*/
+$border-radii: (
+  "none": 0,
+  "medium": 50%,
+  "full": 100%,
+  "xs": $base-border-radius,
+  "sm": $base-border-radius * 2,
+  "md": $base-border-radius * 3,
+  "lg": $base-border-radius * 4,
+  "xl": $base-border-radius * 5,
+);
+/*#endregion#*/

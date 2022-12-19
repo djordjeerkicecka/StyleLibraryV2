@@ -1,0 +1,14 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+// Generate Layout Classes
+@each $property, $map in $layouts {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $value in $values {
+    .#{$prefix}-#{$value} {
+      #{$property}: $value;
+    }
+  }
+}
