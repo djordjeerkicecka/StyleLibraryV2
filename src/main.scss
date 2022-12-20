@@ -2,4 +2,7 @@
 @use "./global/base";
 
 // Import Utility Styles
-@use "./utility/utility";
+@use "./utility/utility-main";
+
+// Import Component Styles
+@use "./components/components-main";
