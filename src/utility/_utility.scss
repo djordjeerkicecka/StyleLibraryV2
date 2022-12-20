@@ -1,11 +1,14 @@
-// Import Layout Classes
-@use "./layouts";
+// Import Backgrounds
+@use "./backgrounds";
 
 // Import Text Classes
 @use "./text";
 
 // Import Spacing Classes
 @use "./spacings";
+
+// Import Layout Classes
+@use "./layouts";
 
 // Import Responsive Grid
 @use "./grid";

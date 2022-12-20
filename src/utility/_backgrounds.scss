@@ -1,0 +1,9 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+// Generate Backgorund Color Classes
+@each $color, $color-value in $palette {
+  .bg-#{$color} {
+    background: $color-value;
+  }
+}
