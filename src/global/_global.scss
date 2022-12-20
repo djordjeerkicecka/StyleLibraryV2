@@ -13,20 +13,20 @@ $terciary: #678 !default;
 // Border Radius
 $base-border-radius: 4px;
 
-// Button Transition 
-$base-button-transition: all .35s linear;
+// Button Transition
+$base-button-transition: all 0.35s linear;
 
 // Grid Column Count
-$grid-columns : 12;
+$grid-columns: 12;
 
 // Grid Gaps
-$grid-gaps : (
+$grid-gaps: (
   "0": 0,
   "1": 10px,
   "2": 20px,
   "3": 30px,
   "4": 40px,
-  "5": 50px
+  "5": 50px,
 );
 
 // Responsive Breakpoints
@@ -39,7 +39,13 @@ $breakpoints: (
   "xxl": 1400px,
 );
 
-// Breakpoint Mixins 
+// Horizontal Line Thickness
+$separator-thickness: (
+  "light": 1px,
+  "medium": 3px,
+  "thick": 5px,
+);
+// Breakpoint Mixins
 /*#region Breakpoint Mixins#*/
 @mixin xs {
   @media screen and (min-width: map-get($breakpoints, "xs")) {

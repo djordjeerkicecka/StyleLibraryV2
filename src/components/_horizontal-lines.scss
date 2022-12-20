@@ -1,0 +1,19 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+// Basic Line Style
+%hr {
+  border: none;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+@each $prop, $value in $separator-thickness {
+  @each $color, $color-values in $palette {
+    .hr-#{$prop}-#{$color} {
+      @extend %hr;
+      height: $value;
+      background-color: $color-values;
+    }
+  }
+}
