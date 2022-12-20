@@ -13,6 +13,19 @@ $terciary: #678 !default;
 // Border Radius
 $base-border-radius: 4px;
 
+// Grid Column Count
+$grid-columns : 12;
+
+// Grid Gaps
+$grid-gaps : (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 40px,
+  "5": 50px
+);
+
 // Responsive Breakpoints
 $breakpoints: (
   "xs": 0,
@@ -22,6 +35,45 @@ $breakpoints: (
   "xl": 1200px,
   "xxl": 1400px,
 );
+
+// Breakpoint Mixins 
+/*#region Breakpoint Mixins#*/
+@mixin xs {
+  @media screen and (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+/*#endregion#*/
 
 // Font Sizes
 /*#region Fonts#*/
