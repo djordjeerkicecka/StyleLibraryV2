@@ -1,0 +1,37 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+%btn {
+    display: inline-block;
+    border: 2px solid black;
+    padding: .6rem 1.2rem;
+    color: #f2f2f2;
+    transition: all .35s linear;
+}
+
+@each $color, $color-value in $palette {
+    .btn-#{$color} {
+        @extend %btn;
+        background-color: $color-value;
+        border-color: $color-value;
+        
+        &:hover,
+        &:active {
+            background-color: #f2f2f2;
+            color: $color-value;
+        }
+    }
+
+    .btn-#{$color}-reverse {
+        @extend %btn;
+        background-color: #f2f2f2;
+        border-color: $color-value;
+        color: $color-value;
+
+        &:hover,
+        &:active {
+            background-color: $color-value;
+            color: #f2f2f2;
+        }
+    }
+}
