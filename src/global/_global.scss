@@ -87,7 +87,7 @@ $separator-thickness: (
 // Font Sizes
 /*#region Fonts#*/
 $font-sizes: (
-  "xs": $base-font-size * 0.5,
+  "xs": $base-font-size * 0.9,
   "sm": $base-font-size,
   "md": $base-font-size * 1.5,
   "lg": $base-font-size * 2,
@@ -95,6 +95,8 @@ $font-sizes: (
   "xxl": $base-font-size * 3,
 );
 /*#endregion#*/
+
+$font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
 
 // Palette
 /*#region Palette#*/

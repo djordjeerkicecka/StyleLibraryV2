@@ -63,7 +63,7 @@ img {
 }
 
 .font-xs {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .font-sm {
@@ -104,6 +104,42 @@ img {
 
 .text-white {
   color: #f2f2f2;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+
+.font-200 {
+  font-weight: 200;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.font-900 {
+  font-weight: 900;
 }
 
 .m-0 {
@@ -1090,11 +1126,6 @@ img {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-}
-
-.card-landscape .card-body .card-title {
-  font-size: 1.5rem;
-  font-weight: 400;
 }
 
 .card-landscape .card-body .card-details {
