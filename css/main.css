@@ -940,3 +940,59 @@ img {
   background-color: #f2f2f2;
   color: #f2f2f2;
 }
+
+.link-white, .link-black, .link-terciary, .link-secondary, .link-primary {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.35s linear;
+}
+.link-white::after, .link-black::after, .link-terciary::after, .link-secondary::after, .link-primary::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.35s linear;
+}
+.link-white:hover::after, .link-black:hover::after, .link-terciary:hover::after, .link-secondary:hover::after, .link-primary:hover::after, .link-white:active::after, .link-black:active::after, .link-terciary:active::after, .link-secondary:active::after, .link-primary:active::after {
+  width: 80%;
+}
+
+.link-primary {
+  color: #123;
+}
+.link-primary::after {
+  background: #123;
+}
+
+.link-secondary {
+  color: #456;
+}
+.link-secondary::after {
+  background: #456;
+}
+
+.link-terciary {
+  color: #678;
+}
+.link-terciary::after {
+  background: #678;
+}
+
+.link-black {
+  color: #424242;
+}
+.link-black::after {
+  background: #424242;
+}
+
+.link-white {
+  color: #f2f2f2;
+}
+.link-white::after {
+  background: #f2f2f2;
+}
