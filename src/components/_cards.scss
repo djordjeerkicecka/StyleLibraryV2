@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0.6rem auto;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 %details-icon {
@@ -106,7 +106,7 @@
 
     .card-title {
       @extend %card-title;
-      font-size: 1.6rem
+      font-size: 1.6rem;
     }
 
     .card-details {
@@ -125,7 +125,71 @@
       .card-button {
         @extend %card-button;
         width: 49%;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@include xs {
+  .card-portrait {
+    .card-details {
+      flex-direction: column;
+    }
+  }
+
+  .card-landscape {
+    flex-direction: column;
+
+    .card-head {
+      width: 100%;
+    }
+
+    .card-body {
+      width: 100%;
+    }
+  }
+}
+
+@include md {
+  .card-landscape {
+    flex-flow: row wrap;
+
+    .card-head {
+      width: 50%;
+    }
+
+    .card-body {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .card-details {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include lg {
+  .card-landscape {
+    .card-body {
+      .card-details {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@include xl {
+  .card-landscape {
+    .card-body {
+      .card-details {
+        width: 80%;
+        flex-direction: column;
       }
     }
   }
