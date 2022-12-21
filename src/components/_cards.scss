@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0.6rem auto;
+  font-size: .85rem;
 }
 
 %details-icon {
@@ -38,6 +39,14 @@
 %card-text {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+}
+
+%card-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 %card-button {
@@ -68,8 +77,12 @@
       @extend %card-text;
     }
 
-    .card-button {
-      @extend %card-button;
+    .card-buttons {
+      @extend %card-buttons;
+
+      .card-button {
+        @extend %card-button;
+      }
     }
   }
 }
@@ -78,15 +91,42 @@
   @extend %flex-row;
 
   .card-head {
-    width: 45%;
+    width: 50%;
     background: red;
 
     .card-img {
       width: 100%;
+      height: 100%;
     }
   }
 
   .card-body {
-    width: 55%;
+    @extend %card-body;
+    width: 50%;
+
+    .card-title {
+      @extend %card-title;
+      font-size: 1.6rem
+    }
+
+    .card-details {
+      @extend %card-details;
+      flex-direction: column;
+    }
+
+    .card-text {
+      @extend %card-text;
+    }
+
+    .card-buttons {
+      @extend %card-buttons;
+      flex-direction: row;
+
+      .card-button {
+        @extend %card-button;
+        width: 49%;
+        margin: .5rem 0;
+      }
+    }
   }
 }
