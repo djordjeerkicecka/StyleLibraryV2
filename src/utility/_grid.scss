@@ -5,12 +5,35 @@
 
 // Generate Column Gap Classes
 @each $gap, $gap-value in $grid-gaps {
+  // Horizontal And Vertical Gaps
   .gap-#{$gap} {
     margin-left: -$gap-value;
     margin-right: -$gap-value;
 
     & > * {
       margin: $gap-value;
+    }
+  }
+
+  // Horizontal Gaps
+  .gap-x-#{$gap} {
+    margin-left: -$gap-value;
+    margin-right: -$gap-value;
+
+    & > * {
+      margin-left: $gap-value;
+      margin-right: $gap-value;
+    }
+  }
+
+  // Vertical Gaps
+  .gap-y-#{$gap} {
+    margin-left: -$gap-value;
+    margin-right: -$gap-value;
+
+    & > * {
+      margin-top: $gap-value;
+      margin-bottom: $gap-value;
     }
   }
 }
