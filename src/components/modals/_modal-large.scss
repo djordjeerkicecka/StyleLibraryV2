@@ -6,52 +6,107 @@
 
 .modal-large {
   @extend %modal;
-  width: 35%;
 
   .modal-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-bottom: 2px solid map-get(global.$palette, "black");
-
-    .modal-title {
-      font-size: 1.5rem;
-    }
+    @extend %modal-head;
 
     .modal-icon {
-      font-size: 2rem;
-      cursor: pointer;
+      @extend %modal-icon;
     }
   }
 
   .modal-body {
     @extend %modal-body;
-    padding: 1rem 2rem;
-
-    .modal-img {
-      width: 60%;
-      float: left;
-      margin-right: 1rem;
-    }
 
     .modal-text {
-      margin-bottom: 1rem;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+      @extend %modal-text;
     }
   }
 
   .modal-footer {
-    border-top: 2px solid map-get(global.$palette, "black");
-    padding: 1rem 2rem;
+    @extend %modal-footer;
+  }
+}
 
-    .buttons {
-      float: right;
-      margin-bottom: 1rem;
+// Responsive
+@include global.xs {
+  .modal-large {
+    width: 90%;
+
+    .modal-head {
+      padding: 1rem 1.5rem;
     }
+
+    .modal-body {
+      padding: 1.5rem 1.5rem 2rem;
+
+      .modal-img {
+        width: 80%;
+        margin: 0 10% 1rem;
+      }
+      .modal-text {
+        text-align: justify;
+      }
+    }
+    .modal-footer {
+      padding: 1rem 1.5rem;
+      .buttons {
+        float: right;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+@include global.sm {
+  .modal-large {
+    width: 70%;
+
+    .modal-head {
+      .modal-title {
+        font-size: 1.6rem;
+      }
+    }
+    .modal-body {
+      .modal-img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      .modal-text {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@include global.md {
+  .modal-large {
+    width: 60%;
+    .modal-body {
+      .modal-img {
+        width: 50%;
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+      .modal-text {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}
+@include global.lg {
+  .modal-large {
+    width: 50%;
+    .modal-body {
+      .modal-img {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+@include global.xl {
+  .modal-large {
+    width: 35%;
   }
 }
