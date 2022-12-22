@@ -38,3 +38,12 @@ Utility Class {
     Text Classes - done 
     Spacings Classes - done
 }
+
+Component Classes 
+    -buttons
+    -links
+    -horizontal lines
+    -cards
+        -landscape, horizontal card
+        -portrait, vertical card
+        
