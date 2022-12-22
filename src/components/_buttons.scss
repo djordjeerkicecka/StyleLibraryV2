@@ -5,8 +5,10 @@
     display: inline-block;
     border: 2px solid black;
     padding: .6rem 1.2rem;
+    font-size: 1rem;
     color: #f2f2f2;
     transition: $base-button-transition; 
+    cursor: pointer
 }
 
 @each $color, $color-value in $palette {

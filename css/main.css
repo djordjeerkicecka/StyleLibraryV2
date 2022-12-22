@@ -991,8 +991,10 @@ img {
   display: inline-block;
   border: 2px solid black;
   padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   color: #f2f2f2;
   transition: all 0.35s linear;
+  cursor: pointer;
 }
 
 .btn-primary {
