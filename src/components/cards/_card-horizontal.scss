@@ -1,0 +1,152 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 8px 3px
+    rgba($color: map-get($palette, "white"), $alpha: 0.7);
+
+  .card-header {
+    .card-img {
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 0.5rem 1rem 1rem;
+
+    .card-title {
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem auto;
+
+      .card-details {
+        font-size: 1.1rem;
+        font-weight: 200;
+      }
+      .card-icon {
+        font-size: 1.1rem;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .card-text {
+      text-align: justify;
+      font-weight: 200;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-buttons {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .card-button {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include md {
+  .card-horizontal {
+    flex-direction: row;
+
+    .card-header {
+      width: 50%;
+    }
+
+    .card-body {
+      width: 50%;
+
+      .card-title {
+        font-weight: 500;
+        font-size: 1.6rem;
+      }
+      .card-info {
+        .card-details {
+          font-size: 1rem;
+        }
+
+        .card-icon {
+          font-size: 1rem;
+        }
+      }
+
+      .card-text {
+        display: -webkit-box;
+        text-align: left;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card-buttons {
+        width: 100%;
+      }
+    }
+  }
+}
+@include lg {
+  .card-horizontal {
+    grid-column: 2 / span 10;
+
+    .card-body {
+      .card-title {
+        font-size: 1.8rem;
+      }
+      .card-info {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card-details {
+          font-size: 1.1rem;
+        }
+      }
+
+      .card-text {
+        font-size: 1.1rem;
+        -webkit-line-clamp: 8;
+      }
+    }
+  }
+}
+
+@include xl {
+  .card-horizontal {
+    grid-column: span 6;
+
+    .card-body {
+      .card-title {
+        font-size: 1.5rem;
+      }
+
+      .card-info {
+        .card-details {
+            font-size: .9rem;
+        }
+        .card-icon {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+      }
+
+      .card-text {
+        font-size: 1rem;
+        -webkit-line-clamp: 6;
+      }
+    }
+  }
+}
