@@ -101,7 +101,6 @@
 }
 @include lg {
   .card-horizontal {
-    grid-column: 2 / span 10;
 
     .card-body {
       .card-title {
@@ -126,7 +125,6 @@
 
 @include xl {
   .card-horizontal {
-    grid-column: span 6;
 
     .card-body {
       .card-title {
