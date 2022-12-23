@@ -1,0 +1,65 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+@use "sass:math";
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  max-width: 100%;
+}
+
+// Grid Gaps
+@each $gap, $gap-value in $grid-gaps {
+  .gap-grid-#{$gap} {
+    gap: $gap-value;
+  }
+}
+
+@include xs {
+  @for $i from 1 through $grid-columns {
+    .col-xs-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through $grid-columns {
+    .col-sm-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through $grid-columns {
+    .col-md-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through $grid-columns {
+    .col-lg-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include xl {
+  @for $i from 1 through $grid-columns {
+    .col-xl-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@include xxl {
+  @for $i from 1 through $grid-columns {
+    .col-xxl-span-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}

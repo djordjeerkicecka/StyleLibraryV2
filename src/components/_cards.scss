@@ -56,7 +56,6 @@
 }
 
 .card-portrait {
-  @extend %flex-column;
 
   .card-body {
     @extend %card-body;
@@ -88,7 +87,6 @@
 }
 
 .card-landscape {
-  @extend %flex-row;
 
   .card-head {
     width: 50%;

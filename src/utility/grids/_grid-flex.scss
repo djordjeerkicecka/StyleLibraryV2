@@ -1,0 +1,95 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+@use "sass:math";
+
+// Generate Column Gap Classes
+@each $gap, $gap-value in $grid-gaps {
+  // Horizontal And Vertical Gaps
+  .gap-flex-#{$gap} {
+    margin-left: -$gap-value;
+    margin-right: -$gap-value;
+
+    & > * {
+      margin: $gap-value;
+    }
+  }
+
+  // Horizontal Gaps
+  .gap-flex-x-#{$gap} {
+    margin-left: -$gap-value;
+    margin-right: -$gap-value;
+
+    & > * {
+      margin-left: $gap-value;
+      margin-right: $gap-value;
+    }
+  }
+
+  // Vertical Gaps
+  .gap-flex-y-#{$gap} {
+    margin-left: -$gap-value;
+    margin-right: -$gap-value;
+
+    & > * {
+      margin-top: $gap-value;
+      margin-bottom: $gap-value;
+    }
+  }
+}
+
+.container-flex {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+// Generate Grid Column Classes
+@include xs {
+  @for $i from 1 through $grid-columns {
+    .col-flex-xs-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
+@include sm {
+  @for $i from 1 through $grid-columns {
+    .col-flex-sm-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
+@include md {
+  @for $i from 1 through $grid-columns {
+    .col-flex-md-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
+@include lg {
+  @for $i from 1 through $grid-columns {
+    .col-flex-lg-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
+@include xl {
+  @for $i from 1 through $grid-columns {
+    .col-flex-xl-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
+@include xxl {
+  @for $i from 1 through $grid-columns {
+    .col-flex-xxl-#{$i} {
+      width: math.div(100% * $i, $grid-columns);
+    }
+  }
+}
