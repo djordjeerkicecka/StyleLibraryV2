@@ -97,6 +97,9 @@
   @include GenerateSpanningColumns("xl", $grid-columns);
 }
 @include xxl {
+  .container-grid {
+    width: 1200px;
+  }
   @include GenerateCenteredSpanningColumns("xxl", $grid-columns);
   @include GenerateSpanningColumns("xxl", $grid-columns);
 }
