@@ -1,0 +1,44 @@
+// Import Global Variables
+@use "../global/global" as *;
+
+// Button Base Styles
+%btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  transition: $base-button-transition;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+// Generate Filled Buttons
+@each $color, $color-value in $palette {
+  .btn-#{$color} {
+    @extend %btn;
+    color: map-get($palette, "white");
+    border-color: $color-value;
+    background: $color-value;
+
+    &:hover,
+    &:active {
+      color: $color-value;
+      background: map-get($palette, "white");
+    }
+  }
+}
+
+// Generate Hollow Buttons
+@each $color, $color-value in $palette {
+  .btn-hollow-#{$color} {
+    @extend %btn;
+    color: $color-value;
+    border-color: $color-value;
+    background: map-get($palette, "white");
+
+    &:hover,
+    &:active {
+      color: map-get($palette, "white");
+      background: $color-value;
+    }
+  }
+}
