@@ -1,17 +1,5 @@
 // Root file for all component files
 // Include this file into the main scss file for it to be compiled
 
-// Import Buttons
-@use "./buttons";
-
-// Import Links
-@use "./links";
-
 // Import Separators
 @use "./horizontal-lines";
-
-// Import Cards
-@use "./cards";
-
-// Import Modals 
-@use "./modals";
