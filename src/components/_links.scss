@@ -2,40 +2,36 @@
 @use "../global/global" as *;
 
 %link {
-    display: flex;
-    align-items: center;
-    padding: 0rem 1rem;
-    position: relative; 
-    transition: $base-button-transition;
+  position: relative;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  transform: $base-button-transition;
 
-    &::after {
-        display: block;
-        content: "";
-        width: 0%;
-        height: 2px;
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: $base-button-transition;
-    }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    transition: $base-button-transition;
+  }
+}
+
+// Generate Link Classes 
+@each $color, $color-value in $palette {
+  .link-#{$color} {
+    @extend %link;
+    color: $color-value;
 
     &:hover,
     &:active {
-        &::after {
-            width: 80%;
-        }
+      &::after {
+        width: 80%;
+        background: $color-value;
+      }
     }
-}
-
-// Generate Link Classes
-@each $color, $color-value in $palette {
-    .link-#{$color} {
-        @extend %link;
-        color: $color-value;
-
-        &::after {
-            background: $color-value;
-        }
-    }
+  }
 }

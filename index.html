@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row my-5 justify-center">
       <button class="btn-primary-reverse" onclick="toggleModal()">
-        Modal Button
+        Large Modal
       </button>
     </div>
   </div>
@@ -69,6 +69,35 @@
     </div>
   </div>
 
+  <!-- Modal Button -->
+  <div class="container">
+    <div class="row my-5 justify-center">
+      <button class="btn-primary-reverse" onclick="toggleSmallModal()">
+        Small Modal
+      </button>
+    </div>
+  </div>
+
+  <div class="modal-wrapper small">
+    <div class="modal-small col-grid-xs-span-10">
+      <div class="modal-head">
+        <i class="modal-icon fa-solid fa-xmark"></i>
+      </div>
+      <div class="modal-body">
+        <div class="modal-text">Are You Sure?</div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="buttons">
+          <button class="btn-primary">Button</button>
+          <button class="btn-primary-reverse" onclick="toggleSmallModal()">
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row justify-center">
       <!-- Full Color Buttons -->
@@ -95,273 +124,284 @@
 
   <!-- Cards Landscape -->
   <hr class="hr-thick-primary" />
-  <div class="container">
-    <div class="row gap-1 justify-center">
-      <article class="card-landscape col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-5 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+  <div class="container-grid">
+    <article class="card-landscape col-grid-xs-span-10 col-grid-sm-span-8 col-md-10 col-lg-8 col-xl-5 bg-white">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-landscape col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-5 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-landscape col-grid-xs-span-10 col-grid-sm-span-8 col-md-10 col-lg-8 col-xl-5 bg-white">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-landscape col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-5 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-landscape col-grid-xs-span-10 col-grid-sm-span-8 col-md-10 col-lg-8 col-xl-5 bg-white">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-landscape col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-5 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-landscape col-grid-xs-span-10 col-grid-sm-span-8 col-md-10 col-lg-8 col-xl-5 bg-white">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
   </div>
 
   <!-- Cards Portrait -->
   <hr class="hr-thick-primary" />
   <div class="container">
-    <div class="row gap-1 justify-center">
-      <article class="card-portrait col-xs-10 col-sm-8 col-md-4 col-lg-3 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-portrait bg-white col-xs-span-10 col-md-span-8 col-lg-span-4">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-portrait col-xs-10 col-sm-8 col-md-4 col-lg-3 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-portrait bg-white col-xs-span-10 col-md-span-8 col-lg-span-4">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-portrait col-xs-10 col-sm-8 col-md-4 col-lg-3 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-portrait bg-white col-xs-span-10 col-md-span-8 col-lg-span-4">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
 
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card-portrait col-xs-10 col-sm-8 col-md-4 col-lg-3 bg-white">
-        <div class="card-head">
-          <img class="card-img" src="https://picsum.photos/400" alt="" />
+    <article class="card-portrait bg-white col-xs-span-10 col-md-span-8 col-lg-span-4">
+      <div class="card-head">
+        <img class="card-img" src="https://picsum.photos/400" alt="" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Lorem ipsum dolor</h2>
+        <div class="card-details">
+          <span class="author">
+            <i class="fa-solid fa-user details-icon"></i>
+            Kamenko Kamenkovic
+          </span>
+          <span class="date">
+            <i class="fa-solid fa-calendar details-icon"></i>
+            24/12/2022
+          </span>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Lorem ipsum dolor</h2>
-          <div class="card-details">
-            <span class="author">
-              <i class="fa-solid fa-user details-icon"></i>
-              Kamenko Kamenkovic
-            </span>
-            <span class="date">
-              <i class="fa-solid fa-calendar details-icon"></i>
-              24/12/2022
-            </span>
-          </div>
-          <p class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quibusdam voluptatibus ratione necessitatibus laboriosam libero
-            hic, consequatur repellat architecto consectetur perferendis
-            temporibus exercitationem fug...
-          </p>
-          <div class="card-buttons">
-            <button class="btn-primary card-button" href="#">Button</button>
-            <button class="btn-primary-reverse card-button" href="#">
-              Button
-            </button>
-          </div>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          voluptatibus ratione necessitatibus laboriosam libero hic,
+          consequatur repellat architecto consectetur perferendis temporibus
+          exercitationem fug...
+        </p>
+        <div class="card-buttons">
+          <button class="btn-primary card-button" href="#">Button</button>
+          <button class="btn-primary-reverse card-button" href="#">
+            Button
+          </button>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
   </div>
 
   <script>
     function toggleModal() {
       const modalClasses = document.querySelector(".modal-wrapper").classList;
+
+      if (modalClasses.contains("modal-open")) {
+        modalClasses.add("modal-close");
+        modalClasses.remove("modal-open");
+      } else {
+        modalClasses.add("modal-open");
+        modalClasses.remove("modal-close");
+      }
+    }
+
+    function toggleSmallModal() {
+      const modalClasses = document.querySelector(
+        ".modal-wrapper.small"
+      ).classList;
+      console.log(modalClasses);
 
       if (modalClasses.contains("modal-open")) {
         modalClasses.add("modal-close");
