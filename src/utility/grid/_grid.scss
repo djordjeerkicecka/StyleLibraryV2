@@ -1,0 +1,87 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+@use "sass:math";
+
+// Grid Container
+.container-grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  gap: 0;
+  margin: 0 auto;
+}
+
+// Gap Classes
+@each $gap, $gap-value in $grid-gaps {
+  .grid-gap-#{$gap} {
+    gap: $gap-value;
+  }
+
+  .grid-gap-x-#{$gap} {
+    column-gap: $gap-value;
+  }
+
+  .grid-gap-y-#{$gap} {
+    row-gap: $gap-value;
+  }
+}
+
+// Generate Centered Spanning Columns
+@mixin GenerateCenteredSpanningColumns($size, $columns) {
+  $spansTo: $columns + 1; // Maximum Span Is From 1 To Column Count + 1
+  $countTo: math.div(
+    $columns,
+    2
+  ); // Count Only To Half The Original Column Count
+
+  @for $spansFrom from 1 through $countTo {
+    // 1 to 13 - spans 12
+    // 2 to 12 - spans 10
+    // 3 to 11 - spans 8 ...
+    // Track Column Span
+    $spansFor: $spansTo - $spansFrom; 
+
+    .grid-#{$size}-span-center-#{$spansFor} {
+      grid-column: #{$spansFrom} / #{$spansTo};
+    }
+
+    // Decrement Span Limit To Match Counters Increment
+    $spansTo: $spansTo - 1;
+  }
+}
+
+// Generate Spanning Columns
+@mixin GenerateSpanningColumns($size, $columns) {
+  @for $spanFor from 1 through $columns {
+    .grid-#{$size}-span-#{$spanFor} {
+      grid-column: span $spanFor;
+    }
+  }
+}
+
+// Grid Span Classes
+@include xs {
+  @include GenerateCenteredSpanningColumns("xs", $grid-columns);
+  @include GenerateSpanningColumns("xs", $grid-columns);
+}
+@include sm {
+  @include GenerateCenteredSpanningColumns("sm", $grid-columns);
+  @include GenerateSpanningColumns("sm", $grid-columns);
+}
+@include md {
+  @include GenerateCenteredSpanningColumns("md", $grid-columns);
+  @include GenerateSpanningColumns("md", $grid-columns);
+}
+@include lg {
+  @include GenerateCenteredSpanningColumns("lg", $grid-columns);
+  @include GenerateSpanningColumns("lg", $grid-columns);
+}
+@include xl {
+  @include GenerateCenteredSpanningColumns("xl", $grid-columns);
+  @include GenerateSpanningColumns("xl", $grid-columns);
+}
+@include xxl {
+  @include GenerateCenteredSpanningColumns("xxl", $grid-columns);
+  @include GenerateSpanningColumns("xxl", $grid-columns);
+}
