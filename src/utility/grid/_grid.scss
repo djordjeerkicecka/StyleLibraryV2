@@ -40,7 +40,7 @@
     // 2 to 12 - spans 10
     // 3 to 11 - spans 8 ...
     // Track Column Span
-    $spansFor: $spansTo - $spansFrom; 
+    $spansFor: $spansTo - $spansFrom;
 
     .grid-#{$size}-span-center-#{$spansFor} {
       grid-column: #{$spansFrom} / #{$spansTo};
@@ -62,26 +62,44 @@
 
 // Grid Span Classes
 @include xs {
+  .container-grid {
+    width: 320px;
+  }
   @include GenerateCenteredSpanningColumns("xs", $grid-columns);
   @include GenerateSpanningColumns("xs", $grid-columns);
 }
 @include sm {
+  .container-grid {
+    width: 420px;
+  }
   @include GenerateCenteredSpanningColumns("sm", $grid-columns);
   @include GenerateSpanningColumns("sm", $grid-columns);
 }
 @include md {
+  .container-grid {
+    width: 720px;
+  }
   @include GenerateCenteredSpanningColumns("md", $grid-columns);
   @include GenerateSpanningColumns("md", $grid-columns);
 }
 @include lg {
+  .container-grid {
+    width: 920px;
+  }
   @include GenerateCenteredSpanningColumns("lg", $grid-columns);
   @include GenerateSpanningColumns("lg", $grid-columns);
 }
 @include xl {
+  .container-grid {
+    width: 1140px;
+  }
   @include GenerateCenteredSpanningColumns("xl", $grid-columns);
   @include GenerateSpanningColumns("xl", $grid-columns);
 }
 @include xxl {
+  .container-grid {
+    width: 1300px;
+  }
   @include GenerateCenteredSpanningColumns("xxl", $grid-columns);
   @include GenerateSpanningColumns("xxl", $grid-columns);
 }
