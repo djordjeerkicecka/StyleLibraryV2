@@ -2,8 +2,9 @@
 @use "../global/global" as *;
 
 %link {
-    padding: .5rem 1rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
     position: relative; 
     transition: $base-button-transition;
 
