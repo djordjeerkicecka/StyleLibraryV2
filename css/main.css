@@ -976,7 +976,7 @@ img {
 }
 @media screen and (min-width: 1400px) {
   .container-grid {
-    width: 1300px;
+    width: 1200px;
   }
   .grid-xxl-span-center-12 {
     grid-column: 1/13;
@@ -1322,4 +1322,177 @@ img {
 .link-white:hover::after, .link-white:active::after {
   width: 80%;
   background: #f2f2f2;
+}
+
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 8px 3px rgba(242, 242, 242, 0.7);
+}
+.card-vertical .card-header .card-img {
+  width: 100%;
+}
+.card-vertical .card-body {
+  padding: 0.5rem 1rem 1rem;
+}
+.card-vertical .card-body .card-title {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.card-vertical .card-body .card-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+.card-vertical .card-body .card-info .card-details {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.card-vertical .card-body .card-info .card-icon {
+  font-size: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.card-vertical .card-body .card-text {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.card-vertical .card-body .card-buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-vertical .card-body .card-buttons .card-button {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card-vertical .card-body .card-buttons {
+    width: 100%;
+  }
+}
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 8px 3px rgba(242, 242, 242, 0.7);
+}
+.card-horizontal .card-header .card-img {
+  width: 100%;
+}
+.card-horizontal .card-body {
+  padding: 0.5rem 1rem 1rem;
+}
+.card-horizontal .card-body .card-title {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.card-horizontal .card-body .card-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+.card-horizontal .card-body .card-info .card-details {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.card-horizontal .card-body .card-info .card-icon {
+  font-size: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.card-horizontal .card-body .card-text {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.card-horizontal .card-body .card-buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-horizontal .card-body .card-buttons .card-button {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card-horizontal {
+    flex-direction: row;
+  }
+  .card-horizontal .card-header {
+    width: 50%;
+  }
+  .card-horizontal .card-body {
+    width: 50%;
+  }
+  .card-horizontal .card-body .card-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .card-horizontal .card-body .card-info .card-details {
+    font-size: 1rem;
+  }
+  .card-horizontal .card-body .card-info .card-icon {
+    font-size: 1rem;
+  }
+  .card-horizontal .card-body .card-text {
+    display: -webkit-box;
+    text-align: left;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-horizontal .card-body .card-buttons {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-horizontal {
+    grid-column: 2/span 10;
+  }
+  .card-horizontal .card-body .card-title {
+    font-size: 1.8rem;
+  }
+  .card-horizontal .card-body .card-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-horizontal .card-body .card-info .card-details {
+    font-size: 1.1rem;
+  }
+  .card-horizontal .card-body .card-text {
+    font-size: 1.1rem;
+    -webkit-line-clamp: 8;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-horizontal {
+    grid-column: span 6;
+  }
+  .card-horizontal .card-body .card-title {
+    font-size: 1.5rem;
+  }
+  .card-horizontal .card-body .card-info .card-details {
+    font-size: 0.9rem;
+  }
+  .card-horizontal .card-body .card-info .card-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .card-horizontal .card-body .card-text {
+    font-size: 1rem;
+    -webkit-line-clamp: 6;
+  }
 }

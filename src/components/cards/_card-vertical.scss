@@ -1,0 +1,71 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 8px 3px
+    rgba($color: map-get($palette, "white"), $alpha: 0.7);
+
+  .card-header {
+    .card-img {
+      width: 100%;
+    }
+  }
+  .card-body {
+    padding: 0.5rem 1rem 1rem;
+
+    .card-title {
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem auto;
+
+      .card-details {
+        font-size: 1.1rem;
+        font-weight: 200;
+      }
+      .card-icon {
+        font-size: 1.1rem;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .card-text {
+      text-align: justify;
+      font-weight: 200;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-buttons {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .card-button {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include lg {
+  .card-vertical {
+    .card-body {
+      .card-buttons {
+        width: 100%;
+      }
+    }
+  }
+}
