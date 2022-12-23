@@ -9,6 +9,7 @@ $base-margin: 0.75rem !default;
 $primary: #123 !default;
 $secondary: #456 !default;
 $terciary: #678 !default;
+$error : #FF3333 !default;
 
 // Border Radius
 $base-border-radius: 4px;
@@ -104,6 +105,7 @@ $palette: (
   "primary": $primary,
   "secondary": $secondary,
   "terciary": $terciary,
+  "error": $error,
   "black": #424242,
   "white": #f2f2f2,
 );
