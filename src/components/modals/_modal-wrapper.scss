@@ -1,0 +1,17 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+// Global Modal Wrapper Settings
+.modal-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba($color: map-get($palette, "black"), $alpha: 0.8);
+  z-index: 100;
+}
