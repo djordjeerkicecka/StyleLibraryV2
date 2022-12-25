@@ -16,18 +16,22 @@
   <body>
     <!-- Modal Buttons -->
     <div class="container px-5 py-2">
-      <button class="btn-primary">Large</button>
+      <button class="btn-primary" onclick="ToggleModal()">Large</button>
       <button class="btn-primary">Small</button>
     </div>
 
     <!-- Modal Large -->
-    <div class="modal-wrapper modal-large">
+    <div class="modal-wrapper">
       <div class="container-grid">
-        <div class="modal grid-xs-span-center-12 grid-sm-span-center-10 grid-md-span-center-6 grid-lg-span-center-6 grid-xl-span-center-4">
+        <div
+          class="modal-large grid-xs-span-center-12 grid-sm-span-center-10 grid-md-span-center-6 grid-lg-span-center-6 grid-xl-span-center-4"
+        >
           <div class="modal-header">
-            <h2 class="modal-title">Lorem, ipsum dolor</h2>
+            <h2 class="modal-heading">Modal Type</h2>
           </div>
           <div class="modal-body">
+            <h2 class="modal-title">Lorem ipsum dolor sit amet.</h2>
+
             <img class="modal-img" src="https://picsum.photos/400" alt="" />
             <p class="modal-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
@@ -56,7 +60,12 @@
           <div class="modal-footer">
             <div class="modal-buttons">
               <button class="modal-button btn-primary">Button</button>
-              <button class="modal-button btn-hollow-primary">Button</button>
+              <button
+                class="modal-button btn-hollow-primary"
+                onclick="ToggleModal()"
+              >
+                Button
+              </button>
             </div>
           </div>
         </div>
@@ -385,5 +394,21 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function ToggleModal() {
+        const modalClasses = document.querySelector(".modal-wrapper").classList;
+
+        console.log(modalClasses);
+
+        if (modalClasses.contains("open")) {
+          modalClasses.add("closed");
+          modalClasses.remove("open");
+        } else {
+          modalClasses.add("open");
+          modalClasses.remove("closed");
+        }
+      }
+    </script>
   </body>
 </html>
