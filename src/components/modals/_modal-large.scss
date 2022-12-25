@@ -7,14 +7,16 @@ $modal-part-border: 3px solid
     $alpha: 0.2,
   );
 
-.modal {
+.modal-large {
   background: map-get($palette, "white");
+  user-select: none;
+  transform: scale(0);
 
   .modal-header {
     padding: 0.8rem 1rem;
     border-bottom: $modal-part-border;
 
-    .modal-title {
+    .modal-heading {
       text-align: center;
       font-size: 1.5rem;
       font-weight: 300;
@@ -24,6 +26,28 @@ $modal-part-border: 3px solid
     padding: 1rem 2rem;
     max-height: 450px;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      background: rgba($color: map-get($palette, "black"), $alpha: 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba($color: map-get($palette, "black"), $alpha: 0.6);
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 300;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 70%;
+        height: 2px;
+        background: rgba($color: map-get($palette, "black"), $alpha: 0.2);
+        margin: 0.5rem auto 1rem;
+      }
+    }
 
     .modal-img {
       margin-bottom: 0.5rem;
