@@ -17,18 +17,18 @@
   z-index: 100;
 
   &.open {
-    animation: ScaleUp .5s linear 0s forwards;
+    animation: ScaleUp 0.35s ease-in-out 0s forwards;
 
     & .modal-large {
       transform: scale(0);
-      animation: 1s FoldOut cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.45s forwards;
+      animation: 0.5s FoldOut ease-in-out 0.25s forwards;
     }
   }
   &.closed {
-    animation: ScaleDown 1.5s linear 0s forwards;
+    animation: ScaleDown 0.8s linear 0s forwards;
 
     & .modal-large {
-      animation: .75s FoldIn ease-in-out 0s forwards;
+      animation: 0.7s FoldIn ease-in-out 0s forwards;
     }
   }
 }
@@ -75,7 +75,12 @@
   0% {
     transform: scaleX(1) scaleY(1);
   }
+
+  50% {
+    transform: scaleX(1) scaleY(0.001);
+  }
+
   100% {
-    transform: scaleX(1) scaleY(0);
+    transform: scaleX(0) scaleY(0);
   }
 }
