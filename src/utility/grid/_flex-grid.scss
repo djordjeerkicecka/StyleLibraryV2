@@ -1,0 +1,59 @@
+// Import Global Variables
+@use "../../global/global" as *;
+
+// Import Math Module
+@use "sass:math";
+
+.container-flex {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@each $gap,
+$gap-value in $grid-gaps {
+    .flex-gap-#{$gap} {
+        margin-left: -$gap-value;
+        margin-right: -$gap-value;
+
+        &>* {
+            padding: $gap-value;
+        }
+    }
+}
+
+@mixin GenerateFlexColumns($size, $column-count) {
+    @for $width from 1 through $column-count {
+        .flex-#{$size}-span-#{$width} {
+            width: math.div(100% * $width, $column-count);
+        }
+    }
+}
+
+@include xs {
+    @include GenerateFlexColumns("xs", $grid-columns);
+}
+
+@include sm {
+    @include GenerateFlexColumns("sm", $grid-columns);
+}
+
+@include md {
+    @include GenerateFlexColumns("md", $grid-columns);
+}
+
+@include lg {
+    @include GenerateFlexColumns("lg", $grid-columns);
+}
+
+@include xl {
+    @include GenerateFlexColumns("xl", $grid-columns);
+}
+
+@include xxl {
+    @include GenerateFlexColumns("xxl", $grid-columns);
+}
