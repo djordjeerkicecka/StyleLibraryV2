@@ -1,3 +1,12 @@
+
+// Global Variables
+@use "./global/global" with (
+    $primary: blue,
+    $secondary: red,
+    $terciary: green,
+    $error: purple
+);
+
 // Base Style
 @use "./global/base";
 

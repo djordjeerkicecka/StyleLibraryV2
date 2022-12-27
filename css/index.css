@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-/*#region Breakpoint Mixins#*/
-/*#endregion#*/
-/*#region Fonts#*/
-/*#endregion#*/
-/*#region Palette#*/
-/*#endregion#*/
-/*#region Margins#*/
-/*#endregion#*/
-/*#region Paddings#*/
-/*#endregion#*/
-/*#region Layout#*/
-/*#endregion#*/
-/*#region Border Radius*/
-/*#endregion#*/
 * {
   margin: 0;
   padding: 0;
@@ -42,20 +28,34 @@ img {
   transform: translate(-50%, -50%);
 }
 
+/*#region Breakpoint Mixins#*/
+/*#endregion#*/
+/*#region Fonts#*/
+/*#endregion#*/
+/*#region Palette#*/
+/*#endregion#*/
+/*#region Margins#*/
+/*#endregion#*/
+/*#region Paddings#*/
+/*#endregion#*/
+/*#region Layout#*/
+/*#endregion#*/
+/*#region Border Radius*/
+/*#endregion#*/
 .bg-primary {
-  background: blue;
+  background: #123;
 }
 
 .bg-secondary {
-  background: red;
+  background: #456;
 }
 
 .bg-terciary {
-  background: green;
+  background: #678;
 }
 
 .bg-error {
-  background: purple;
+  background: #FF3333;
 }
 
 .bg-black {
@@ -91,19 +91,19 @@ img {
 }
 
 .text-primary {
-  color: blue;
+  color: #123;
 }
 
 .text-secondary {
-  color: red;
+  color: #456;
 }
 
 .text-terciary {
-  color: green;
+  color: #678;
 }
 
 .text-error {
-  color: purple;
+  color: #FF3333;
 }
 
 .text-black {
@@ -1328,22 +1328,22 @@ img {
 
 .hr-light-primary {
   height: 1px;
-  background-color: blue;
+  background-color: #123;
 }
 
 .hr-light-secondary {
   height: 1px;
-  background-color: red;
+  background-color: #456;
 }
 
 .hr-light-terciary {
   height: 1px;
-  background-color: green;
+  background-color: #678;
 }
 
 .hr-light-error {
   height: 1px;
-  background-color: purple;
+  background-color: #FF3333;
 }
 
 .hr-light-black {
@@ -1358,22 +1358,22 @@ img {
 
 .hr-medium-primary {
   height: 3px;
-  background-color: blue;
+  background-color: #123;
 }
 
 .hr-medium-secondary {
   height: 3px;
-  background-color: red;
+  background-color: #456;
 }
 
 .hr-medium-terciary {
   height: 3px;
-  background-color: green;
+  background-color: #678;
 }
 
 .hr-medium-error {
   height: 3px;
-  background-color: purple;
+  background-color: #FF3333;
 }
 
 .hr-medium-black {
@@ -1388,22 +1388,22 @@ img {
 
 .hr-thick-primary {
   height: 5px;
-  background-color: blue;
+  background-color: #123;
 }
 
 .hr-thick-secondary {
   height: 5px;
-  background-color: red;
+  background-color: #456;
 }
 
 .hr-thick-terciary {
   height: 5px;
-  background-color: green;
+  background-color: #678;
 }
 
 .hr-thick-error {
   height: 5px;
-  background-color: purple;
+  background-color: #FF3333;
 }
 
 .hr-thick-black {
@@ -1427,41 +1427,41 @@ img {
 
 .btn-primary {
   color: #f2f2f2;
-  border-color: blue;
-  background: blue;
+  border-color: #123;
+  background: #123;
 }
 .btn-primary:hover, .btn-primary:active {
-  color: blue;
+  color: #123;
   background: #f2f2f2;
 }
 
 .btn-secondary {
   color: #f2f2f2;
-  border-color: red;
-  background: red;
+  border-color: #456;
+  background: #456;
 }
 .btn-secondary:hover, .btn-secondary:active {
-  color: red;
+  color: #456;
   background: #f2f2f2;
 }
 
 .btn-terciary {
   color: #f2f2f2;
-  border-color: green;
-  background: green;
+  border-color: #678;
+  background: #678;
 }
 .btn-terciary:hover, .btn-terciary:active {
-  color: green;
+  color: #678;
   background: #f2f2f2;
 }
 
 .btn-error {
   color: #f2f2f2;
-  border-color: purple;
-  background: purple;
+  border-color: #FF3333;
+  background: #FF3333;
 }
 .btn-error:hover, .btn-error:active {
-  color: purple;
+  color: #FF3333;
   background: #f2f2f2;
 }
 
@@ -1486,43 +1486,43 @@ img {
 }
 
 .btn-hollow-primary {
-  color: blue;
-  border-color: blue;
+  color: #123;
+  border-color: #123;
   background: #f2f2f2;
 }
 .btn-hollow-primary:hover, .btn-hollow-primary:active {
   color: #f2f2f2;
-  background: blue;
+  background: #123;
 }
 
 .btn-hollow-secondary {
-  color: red;
-  border-color: red;
+  color: #456;
+  border-color: #456;
   background: #f2f2f2;
 }
 .btn-hollow-secondary:hover, .btn-hollow-secondary:active {
   color: #f2f2f2;
-  background: red;
+  background: #456;
 }
 
 .btn-hollow-terciary {
-  color: green;
-  border-color: green;
+  color: #678;
+  border-color: #678;
   background: #f2f2f2;
 }
 .btn-hollow-terciary:hover, .btn-hollow-terciary:active {
   color: #f2f2f2;
-  background: green;
+  background: #678;
 }
 
 .btn-hollow-error {
-  color: purple;
-  border-color: purple;
+  color: #FF3333;
+  border-color: #FF3333;
   background: #f2f2f2;
 }
 .btn-hollow-error:hover, .btn-hollow-error:active {
   color: #f2f2f2;
-  background: purple;
+  background: #FF3333;
 }
 
 .btn-hollow-black {
@@ -1564,35 +1564,35 @@ img {
 }
 
 .link-primary {
-  color: blue;
+  color: #123;
 }
 .link-primary:hover::after, .link-primary:active::after {
   width: 80%;
-  background: blue;
+  background: #123;
 }
 
 .link-secondary {
-  color: red;
+  color: #456;
 }
 .link-secondary:hover::after, .link-secondary:active::after {
   width: 80%;
-  background: red;
+  background: #456;
 }
 
 .link-terciary {
-  color: green;
+  color: #678;
 }
 .link-terciary:hover::after, .link-terciary:active::after {
   width: 80%;
-  background: green;
+  background: #678;
 }
 
 .link-error {
-  color: purple;
+  color: #FF3333;
 }
 .link-error:hover::after, .link-error:active::after {
   width: 80%;
-  background: purple;
+  background: #FF3333;
 }
 
 .link-black {
@@ -1962,8 +1962,8 @@ img {
   margin-right: 1rem;
 }
 .form-field.error .field-input {
-  border-color: purple;
-  box-shadow: 0px 3px 5px 3px rgba(128, 0, 128, 0.2);
+  border-color: #FF3333;
+  box-shadow: 0px 3px 5px 3px rgba(255, 51, 51, 0.2);
 }
 .form-field.error .error-message {
   visibility: visible;
@@ -1981,7 +1981,7 @@ img {
   font-size: 1.3rem;
   font-weight: 400;
   padding: 0.2rem 0.3rem;
-  border: 2px solid blue;
+  border: 2px solid #123;
   transition: all 0.35s ease-in-out;
   outline: none;
 }
@@ -1989,7 +1989,7 @@ img {
   resize: none;
 }
 .form-field .field-input:focus {
-  box-shadow: 0px 3px 5px 3px rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px 3px rgba(68, 85, 102, 0.2);
 }
 .form-field .field-select {
   width: 100%;
@@ -1997,12 +1997,12 @@ img {
   font-size: 1.3rem;
   font-weight: 400;
   padding: 0.2rem 0.3rem;
-  border: 2px solid blue;
+  border: 2px solid #123;
   transition: all 0.35s ease-in-out;
   outline: none;
 }
 .form-field .field-select:focus {
-  box-shadow: 0px 3px 5px 3px rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px 3px rgba(68, 85, 102, 0.2);
 }
 .form-field .field-select .select-option {
   color: #424242;
@@ -2013,10 +2013,10 @@ img {
   background-color: #424242;
 }
 .form-field .field-select .select-option:nth-child(odd) {
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgba(17, 34, 51, 0.2);
 }
 .form-field .field-select .select-option:nth-child(even) {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(68, 85, 102, 0.2);
 }
 .form-field .field-radio {
   margin-right: 1rem;
@@ -2030,18 +2030,18 @@ img {
 .form-field .field-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 15px;
-  background: green;
+  background: #678;
   border: none;
 }
 .form-field .field-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
-  background: blue;
+  background: #123;
 }
 .form-field .error-message {
   visibility: hidden;
-  color: purple;
+  color: #FF3333;
   font-size: 1rem;
   font-weight: 400;
   position: absolute;
