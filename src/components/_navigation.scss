@@ -1,58 +1,142 @@
 // Import Global Variables
 @use "../global/global" as *;
 
-.nav {
+.navbar {
   width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 2px solid rgba($color: map-get($palette, "black"), $alpha: 0.5);
+  z-index: 10000;
+}
 
-  .nav-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-toggler {
-    font-size: 2rem;
-    color: map-get($palette, "white");
-  }
+.navbar-nav {
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 
   .nav-logo {
-    height: 100%;
+    height: 40px;
+    overflow: hidden;
 
-    .nav-logo-img {
-      height: 50px;
-      width: auto;
+    & > * {
+      max-height: 50px;
     }
   }
-  .nav-links {
+
+  .nav-toggler {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    transition: all 0.35s linear;
+
+    &:hover {
+      color: map-get($palette, "white");
+    }
+  }
+
+  .nav-links {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    top: 50px;
+    left: 0;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+
+    &.nav-open {
+      max-height: 500px;
+      border-bottom: 2px solid
+        rgba($color: map-get($palette, "black"), $alpha: 0.5);
+    }
 
     .nav-link {
-      position: relative;
       display: inline-block;
-      padding: .5rem 1rem;
-      font-size: 1.2rem;
-      color: map-get($palette, "white");
-    
-      &::after {
-        content: " ";
-        width: 0%;
-        height: 2px;
-        display: block;
-        position: absolute;
-        bottom: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all .35s ease-in-out;  
-        background: map-get($palette, "white");
+      width: 100%;
+      padding: 0.5rem 0;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+@include sm {
+  .navbar {
+    .navbar-nav {
+      width: 420px;
+    }
+  }
+}
+
+@include md {
+  .navbar {
+    .navbar-nav {
+      width: 720px;
+
+      .nav-toggler {
+        display: none;
       }
 
-      &:hover::after {
-        width: 80%;
+      .nav-links {
+        width: initial;
+        max-height: initial;
+        inset: initial;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        overflow: visible;
+
+        .nav-link {
+          padding: 0.3rem 1.5rem;
+          background: red;
+        }
+
+        li {
+          margin: 0 .5rem;
+        }
+
+        li:first-child {
+          margin-left: 0;
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
       }
+    }
+  }
+}
+
+@include lg {
+  .navbar {
+    .navbar-nav {
+      width: 920px;
+    }
+  }
+}
+
+@include xl {
+  .navbar {
+    .navbar-nav {
+      width: 1140px;
+    }
+  }
+}
+
+@include xxl {
+  .navbar {
+    .navbar-nav {
+      width: 1200px;
     }
   }
 }

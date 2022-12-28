@@ -2067,3 +2067,114 @@ img {
     width: 45%;
   }
 }
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 2px solid rgba(66, 66, 66, 0.5);
+  z-index: 10000;
+}
+
+.navbar-nav {
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav .nav-logo {
+  height: 40px;
+  overflow: hidden;
+}
+.navbar-nav .nav-logo > * {
+  max-height: 50px;
+}
+.navbar-nav .nav-toggler {
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s linear;
+}
+.navbar-nav .nav-toggler:hover {
+  color: #f2f2f2;
+}
+.navbar-nav .nav-links {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  max-height: 0;
+  top: 50px;
+  left: 0;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-links.nav-open {
+  max-height: 500px;
+  border-bottom: 2px solid rgba(66, 66, 66, 0.5);
+}
+.navbar-nav .nav-links .nav-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (min-width: 480px) {
+  .navbar .navbar-nav {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-nav {
+    width: 720px;
+  }
+  .navbar .navbar-nav .nav-toggler {
+    display: none;
+  }
+  .navbar .navbar-nav .nav-links {
+    width: initial;
+    max-height: initial;
+    inset: initial;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+  }
+  .navbar .navbar-nav .nav-links .nav-link {
+    padding: 0.3rem 1.5rem;
+    background: red;
+  }
+  .navbar .navbar-nav .nav-links li {
+    margin: 0 0.5rem;
+  }
+  .navbar .navbar-nav .nav-links li:first-child {
+    margin-left: 0;
+  }
+  .navbar .navbar-nav .nav-links li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar .navbar-nav {
+    width: 920px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar .navbar-nav {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navbar .navbar-nav {
+    width: 1200px;
+  }
+}

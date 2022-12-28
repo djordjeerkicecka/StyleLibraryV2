@@ -14,6 +14,26 @@
   </head>
 
   <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <div class="nav-logo">
+          <img src="./assets/templatelogo.png" alt="">
+        </div>
+
+        <div class="nav-toggler" onclick="NavigationToggle()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#">Link</a></li>
+          <li><a class="nav-link" href="#">Link</a></li>
+          <li><a class="nav-link" href="#">Link</a></li>
+          <li><a class="nav-link" href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Modal Buttons -->
     <div class="container px-5 py-2">
       <button class="btn-primary" onclick="ToggleModal()">Large</button>
@@ -406,6 +426,12 @@
           modalClasses.add("open");
           modalClasses.remove("closed");
         }
+      }
+
+      function NavigationToggle() {
+        const NavigationClasses = document.querySelector(".nav-links").classList;
+
+        NavigationClasses.toggle("nav-open");
       }
     </script>
   </body>
